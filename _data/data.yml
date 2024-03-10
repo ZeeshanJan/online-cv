@@ -10,7 +10,7 @@ sidebar:
     # Profile information
     name: Zeeshan Jan
     tagline: Research Engineer
-    avatar: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+    avatar: zjan.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
     email: hello@zeeshan.uk
