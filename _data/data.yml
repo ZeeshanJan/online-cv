@@ -90,9 +90,9 @@ education:
 experiences:
     title: Experiences
     info:
-      - role: Lead Developer
+      - role: Research Engineer
         time: 2015 - Present
-        company: Startup Hubs, San Francisco
+        company: University of Edinburgh, UK
         details: |
           Describe your role here lorem ipsum dolor sit amet, consectetuer
           adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
@@ -105,9 +105,9 @@ experiences:
           architecto beatae vitae dicta sunt explicabo.
             - Bullet point
             - Bullet point
-      - role: Senior Software Engineer
-        time: 2014 - 2015
-        company: Google, London
+      - role: Blockchain Lead
+        time: 2021 - 2022
+        company: Niftisplits, London, UK
         details: |
           Describe your role here lorem ipsum dolor sit amet, consectetuer
           adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
@@ -116,9 +116,9 @@ experiences:
           pellentesque eu, pretium quis, sem.
             - Bullet point
             - Bullet point
-      - role: UI Developer
-        time: 2012 - 2014
-        company: Amazon, London
+      - role: Researcher
+        time: 2014 - 2017
+        company: Insight - Centre for Data Analytics, Galway, Ireland
         details: |
           Describe your role here lorem ipsum dolor sit amet, consectetuer
           adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
@@ -127,6 +127,22 @@ experiences:
           pellentesque eu, pretium quis, sem.
             - Bullet point
             - Bullet point
+      - role: Team Lead | Software Engineer
+        time: 2014 - 2014
+        company: Virtual Base, Multan, PK
+        details: |
+          Describe Role
+      - role: Software Engineer
+        time: 2013 - 2014
+        company: Oasis Digital Solutions, USA
+        details: |
+          Describe Role
+      - role: Lecturer (Visiting Faculty)
+        time: 2011 - 2013
+        company: Bahauddin Zakariya University, Multan, PK
+        details: |
+          Describe role
+          
 
 certifications:
       title: Certifications
