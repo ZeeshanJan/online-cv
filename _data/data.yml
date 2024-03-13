@@ -14,7 +14,7 @@ sidebar:
 
     # Sidebar links
     email: hello@zeeshan.uk
-    phone: 012 345 6789
+    phone: #012 345 6789
     timezone: London/Dublin Timezone
     citizenship:
     website: zeeshan.uk #do not add http://
@@ -42,14 +42,11 @@ sidebar:
         - idiom: Punjabi
           level: Native
 
-    interests:
-      title: Interests
-      info:
-        - item: Cricket
-          link:
-
-        - item: Badminton
-          link:
+#    interests:
+#      title: Interests
+#      info:
+#        - item: Cricket
+#          link:
 
 career-profile:
     title: Career Profile
