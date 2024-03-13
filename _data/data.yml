@@ -110,40 +110,41 @@ experiences:
       time: 2021 - 2022
       company: Niftisplits, London, UK
       details: |
-        Describe your role here lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-        Cum sociis natoque penatibus et magnis dis parturient montes,
-        nascetur ridiculus mus. Donec quam felis, ultricies nec,
-        pellentesque eu, pretium quis, sem.
-          - Bullet point
-          - Bullet point
+        As a Blockchain Lead at Niftysplits, I led the conceptualisation 
+        and implementation of smart contract architectures, 
+        contributing to the development of innovative gaming experiences 
+        and NFT ecosystems.
     - role: Researcher
       time: 2014 - 2017
       company: Insight - Centre for Data Analytics, Galway, Ireland
       details: |
-        Describe your role here lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-        Cum sociis natoque penatibus et magnis dis parturient montes,
-        nascetur ridiculus mus. Donec quam felis, ultricies nec,
-        pellentesque eu, pretium quis, sem.
-          - Bullet point
-          - Bullet point
+        I was responsible for the development 
+        and maintenance of a key component within an EU project framework. 
+        This component played a crucial role in storing and managing data streams 
+        from diverse IoT projects. To tackle the challenge of interoperability 
+        across these projects, I designed and released an ontology, 
+        which was subsequently implemented to streamline operations 
+        and enhance compatibility.
     - role: Team Lead | Software Engineer
       time: 2014 - 2014
       company: Virtual Base, Multan, PK
       details: |
-        Describe Role
+        As a team lead & software engineer, 
+        I directed a team of software engineers tasked with overseeing 
+        multiple web projects within a brief timeframe.
     - role: Software Engineer
       time: 2013 - 2014
       company: Oasis Digital Solutions, USA
       details: |
-        Describe Role
+        I contributed to a project with a focus on the semantic web aspect.
     - role: Lecturer (Visiting Faculty)
       time: 2011 - 2013
       company: Bahauddin Zakariya University, Multan, PK
       details: |
-        Describe role
-
+        I taught Software Engineering, Object-Oriented Programming, 
+        and other subjects to undergraduate students majoring in both 
+        the Computer Science and Computer Engineering departments.
+        
 certifications:
   title: Certifications
   list:
