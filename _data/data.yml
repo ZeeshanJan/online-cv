@@ -1,548 +1,103 @@
-#
-# Be aware that even a small syntax error here can lead to failures in output.
-#
+name: 'Zeeshan Jan'
+title: 'Senior / Lead Software Engineer - Distributed Systems and Blockchain'
+email: 'hello@zeeshan.uk'
+phone: '+44 7488558529'
+website: 'https://zeeshan.uk'
+linkedin: 'https://linkedin.com/in/zeeshanjan'
+github: 'https://github.com/zeeshanjan'
+location: 'Edinburgh, UK'
 
-sidebar:
-  position: right # position of the sidebar : left or right
-<<<<<<< HEAD
-  about: False # set to False or comment line if you want to remove the "how to use?" in the sidebar
-  education: True # set to False if you want education in main section instead of in sidebar
+summary: >
+  Senior and Lead Research Software Engineer with experience across distributed systems, blockchain,
+  Semantic Web technologies, IoT, and linked data. I build high integrity data pipelines, APIs,
+  and Web3 applications in Solidity, Python, TypeScript, and Java. I translate complex analytical
+  requirements into clean, reliable architectures and prioritise reproducibility, observability,
+  and correctness for real time systems.
 
-  # Profile information
-  name: Zeeshan Jan
-  tagline: Research Engineer
-  avatar: zjan.png #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+experience:
+  - role: 'Research Engineer'
+    company: 'The University of Edinburgh'
+    period: 'Nov 2023 - Present'
+    location: 'UK'
+    details:
+      - 'Lead engineer for the Edinburgh Decentralisation Index, designing distributed ingestion and analytics pipelines across Bitcoin, Ethereum, Cardano, and Ripple.'
+      - 'Operated and maintained archival nodes to support reproducible, high integrity blockchain data collection.'
+      - 'Built and maintained APIs and data services enabling decentralisation metrics and cross chain analysis.'
+      - 'Delivered the public React and TypeScript dashboard for interactive exploration of decentralisation data.'
+      - 'Improved engineering workflows through CI/CD automation and observability enhancements.'
 
-  # Sidebar links
-  email: hello@zeeshan.uk
-  phone: #012 345 6789
-  timezone: London/Dublin Timezone
-  citizenship:
-  website: zeeshan.uk #do not add http://
-  linkedin: zeeshanjan
-  xing:
-  github: zeeshanjan
-  telegram: # add your nickname without '@' sign
-  gitlab:
-  bitbucket:
-  twitter: "@zeeshanjan"
-  stack-overflow: 1659470/zeeshan # Number/Username, e.g. 123456/alandoe
-  codewars:
-  goodreads: # Number-Username, e.g. 123456-alandoe
-  pdf: #http://www.africau.edu/images/default/sample.pdf
-=======
-  about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
-  education: True # set to False if you want education in main section instead of in sidebar
+  - role: 'Blockchain Lead'
+    company: 'Niftysplits'
+    period: 'Oct 2021 - Jun 2022'
+    location: 'London, UK'
+    details:
+      - 'Designed distributed backend workflows for an NFT based gaming platform using TypeScript.'
+      - 'Built event driven blockchain listeners and indexing components for asset state tracking.'
+      - 'Developed and tested ERC-721 and custom smart contracts using Hardhat and OpenZeppelin.'
+      - 'Delivered REST and WebSocket APIs powering minting flows and gameplay mechanics.'
 
-  # Profile information
-  name: Alan Doe
-  tagline: Full Stack Developer
-  avatar: profile.png #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+  - role: 'Researcher'
+    company: 'Insight Centre for Data Analytics, NUI Galway'
+    period: 'Dec 2014 - Aug 2017'
+    location: 'Ireland'
+    details:
+      - 'Built Java based semantic data processing components for a platform agnostic IoT framework.'
+      - 'Developed distributed microservices supporting real time ingestion and complex event processing.'
+      - 'Designed data models and interoperability layers for heterogeneous IoT devices using Semantic Web technologies and the VITAL ontology.'
+      - 'Delivered scalable data management services used in multiple research deployments.'
 
-  # Sidebar links
-  email: example@email.com
-  phone: 012 345 6789
-  timezone: America/Cancun # Enter your timezone, e.g., America/Havana, Africa/Casablanca, America/North_Dakota/Center
-  citizenship:
-  website: https://example.com/ # Include the full website URL, including "http://" or "https://".
-  linkedin: alandoe
-  xing: alandoe
-  github: jekyll
-  telegram: # add your nickname without '@' sign
-  gitlab:
-  bitbucket:
-  bluesky: '@jekyllrb.bsky.social' # Specify your full Bluesky handle
-  twitter: '@jekyllrb'
-  stack-overflow: # Number/Username, e.g. 123456/alandoe
-  codewars:
-  goodreads: # Number-Username, e.g. 123456-alandoe
-  mastodon: # Please include your full Mastodon link here.
-  hackerrank: # Please provide your HackerRank username.
-  leetcode: # Please provide your LeetCode username.
-  pdf: # Add a PDF link here if you want to include a PDF custom version in your resume.
->>>>>>> upstream/master
-
-  languages:
-    title: Languages
-    info:
-<<<<<<< HEAD
-      - idiom: English
-        level: Professional
-
-      - idiom: Urdu
-        level: Native
-
-      - idiom: Punjabi
-        level: Native
-
-#    interests:
-#      title: Interests
-#      info:
-#        - item: Cricket
-#          link:
-=======
-    - idiom: English
-      level: Native
-
-    - idiom: French
-      level: Professional
-
-    - idiom: Spanish
-      level: Professional
-
-  interests:
-    title: Interests
-    info:
-    - item: Climbing
-      link:
-
-
-    - item: Snowboarding
-      link:
-
-
-    - item: Cooking
-      link:
-
->>>>>>> upstream/master
-
-career-profile:
-  title: Career Profile
-  summary: |
-<<<<<<< HEAD
-    As an experienced professional in software engineering and research, 
-    I have cultivated expertise in blockchain technology. 
-    My career journey includes roles as a Research Engineer and Blockchain Lead, 
-    where I've contributed to research endeavors, led blockchain projects, 
-    and collaborated within software engineering teams. 
-    I am deeply passionate about exploring the practical applications 
-    of blockchain technology, alongside my interests in web development.
-education:
-  title: Education
-  info:
-    - degree: PhD (Peer-review on a Decentralised Web)
-      university: The Open University, UK.
-      time: 2017 - 2022
-
-    - degree: MSc in Advanced Software Engineering
-      university: University of Leicester, UK.
-      time: 2010 - 2011
-      details: |
-        Describe your study here lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-        sociis natoque penatibus et magnis dis parturient montes, nascetur
-        ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-        pretium quis, sem.
-          - Bullet point
-          - Bullet point
-    - degree: BS (hons) in Computer Science
-      university: Bahauddin Zakariya University, Pakistan
-      time: 2004 - 2008
-      details: |
-        Describe your study here lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-        sociis natoque penatibus et magnis dis parturient montes, nascetur
-        ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-        pretium quis, sem.
-          - Bullet point
-          - Bullet point
-=======
-    Summarise your career here lorem ipsum dolor sit amet, consectetuer
-    adipiscing elit. You can [download this free resume/CV template here]().
-    Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque
-    penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-    Donec quam felis, ultricies nec, pellentesque eu.
-    Second paragraph if required.
-education:
-  title: Education
-  info:
-  - degree: MSc in Computer Science
-    university: University of London
-    time: 2011 - 2012
-    details: |
-      Describe your study here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-      sociis natoque penatibus et magnis dis parturient montes, nascetur
-      ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-      pretium quis, sem.
-        - Bullet point
-        - Bullet point
-  - degree: BSc in Applied Mathematics
-    university: Bristol University
-    time: 2007 - 2011
-    details: |
-      Describe your study here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-      sociis natoque penatibus et magnis dis parturient montes, nascetur
-      ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-      pretium quis, sem.
-        - Bullet point
-        - Bullet point
->>>>>>> upstream/master
-
-experiences:
-  title: Experiences
-  info:
-<<<<<<< HEAD
-    - role: Research Engineer
-      time: 2023 - Present
-      company: University of Edinburgh, UK
-      details: |
-        Describe your role here lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-        Cum sociis natoque penatibus et magnis dis parturient montes,
-        nascetur ridiculus mus. Donec quam felis, ultricies nec,
-        pellentesque eu, pretium quis, sem. Nulla consequat massa quis
-        enim. Donec pede justo. Sed ut perspiciatis unde omnis iste natus
-        error sit voluptatem accusantium doloremque laudantium, totam rem
-        aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-        architecto beatae vitae dicta sunt explicabo.
-          - Bullet point
-          - Bullet point
-    - role: Blockchain Lead
-      time: 2021 - 2022
-      company: Niftisplits, London, UK
-      details: |
-        As a Blockchain Lead at Niftysplits, I led the conceptualisation 
-        and implementation of smart contract architectures, 
-        contributing to the development of innovative gaming experiences 
-        and NFT ecosystems.
-    - role: Researcher
-      time: 2014 - 2017
-      company: Insight - Centre for Data Analytics, Galway, Ireland
-      details: |
-        I was responsible for the development 
-        and maintenance of a key component within an EU project framework. 
-        This component played a crucial role in storing and managing data streams 
-        from diverse IoT projects. To tackle the challenge of interoperability 
-        across these projects, I designed and released an ontology, 
-        which was subsequently implemented to streamline operations 
-        and enhance compatibility.
-    - role: Team Lead | Software Engineer
-      time: 2014 - 2014
-      company: Virtual Base, Multan, PK
-      details: |
-        As a team lead & software engineer, 
-        I directed a team of software engineers tasked with overseeing 
-        multiple web projects within a brief timeframe.
-    - role: Software Engineer
-      time: 2013 - 2014
-      company: Oasis Digital Solutions, USA
-      details: |
-        I contributed to a project with a focus on the semantic web aspect.
-    - role: Lecturer (Visiting Faculty)
-      time: 2011 - 2013
-      company: Bahauddin Zakariya University, Multan, PK
-      details: |
-        I taught Software Engineering, Object-Oriented Programming, 
-        and other subjects to undergraduate students majoring in both 
-        the Computer Science and Computer Engineering departments.
-        
-certifications:
-  title: Certifications
-  list:
-    - name: CV Builder
-      start: 2020
-      end: 2021
-      organization: Microsoft
-      credentialid: 111-222
-      credentialurl: www.google.com
-      credentialname: Google
-      details: |
-        Details about cert. Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit.
-        Nullam eget orci purus. Nullam ultrices neque nibh.
-        Aenean fermentum, felis vulputate suscipit accumsan,
-        sem enim bibendum augue, sed convallis arcu lacus at dui.
-        Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
-        Praesent felis nibh, eleifend id eleifend id, dictum id enim.
-        Praesent venenatis erat non augue suscipit consectetur.
-
-        Second paragraph. Sed eleifend enim ante, vitae efficitur purus
-        fringilla vel. Ut euismod, sem sed vulputate venenatis,
-        justo diam viverra velit, sed rhoncus leo leo eu justo.
-        Suspendisse placerat risus ante, sed porta nisi blandit at.
-    - name: Git learning
-      start: 2019
-      end:
-      organization: Microsoft
-      credentialid: 111-222
-      credentialurl: www.github.com
-      credentialname: Github
-      details: |
-        Older certification. Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit.
-        Nullam eget orci purus. Nullam ultrices neque nibh.
-        Aenean fermentum, felis vulputate suscipit accumsan,
-        sem enim bibendum augue, sed convallis arcu lacus at dui.
-        Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
-        Praesent felis nibh, eleifend id eleifend id, dictum id enim.
-        Praesent venenatis erat non augue suscipit consectetur.
-=======
-  - role: Lead Developer
-    time: 2015 - Present
-    company: Startup Hubs, San Francisco
-    details: |
-      Describe your role here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-      Cum sociis natoque penatibus et magnis dis parturient montes,
-      nascetur ridiculus mus. Donec quam felis, ultricies nec,
-      pellentesque eu, pretium quis, sem. Nulla consequat massa quis
-      enim. Donec pede justo. Sed ut perspiciatis unde omnis iste natus
-      error sit voluptatem accusantium doloremque laudantium, totam rem
-      aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-      architecto beatae vitae dicta sunt explicabo.
-        - Bullet point
-        - Bullet point
-  - role: Senior Software Engineer
-    time: 2014 - 2015
-    company: Google, London
-    details: |
-      Describe your role here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-      Cum sociis natoque penatibus et magnis dis parturient montes,
-      nascetur ridiculus mus. Donec quam felis, ultricies nec,
-      pellentesque eu, pretium quis, sem.
-        - Bullet point
-        - Bullet point
-  - role: UI Developer
-    time: 2012 - 2014
-    company: Amazon, London
-    details: |
-      Describe your role here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-      Cum sociis natoque penatibus et magnis dis parturient montes,
-      nascetur ridiculus mus. Donec quam felis, ultricies nec,
-      pellentesque eu, pretium quis, sem.
-        - Bullet point
-        - Bullet point
-
-certifications:
-  title: Certifications
-  list:
-  - name: CV Builder
-    start: 2020
-    end: 2021
-    organization: Microsoft
-    credentialid: 111-222
-    credentialurl: www.google.com
-    credentialname: Google
-    details: |
-      Details about cert. Lorem ipsum dolor sit amet, consectetur
-      adipiscing elit.
-      Nullam eget orci purus. Nullam ultrices neque nibh.
-      Aenean fermentum, felis vulputate suscipit accumsan,
-      sem enim bibendum augue, sed convallis arcu lacus at dui.
-      Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
-      Praesent felis nibh, eleifend id eleifend id, dictum id enim.
-      Praesent venenatis erat non augue suscipit consectetur.
-
-      Second paragraph. Sed eleifend enim ante, vitae efficitur purus
-      fringilla vel. Ut euismod, sem sed vulputate venenatis,
-      justo diam viverra velit, sed rhoncus leo leo eu justo.
-      Suspendisse placerat risus ante, sed porta nisi blandit at.
-  - name: Git learning
-    start: 2019
-    end:
-    organization: Microsoft
-    credentialid: 111-222
-    credentialurl: www.github.com
-    credentialname: Github
-    details: |
-      Older certification. Lorem ipsum dolor sit amet, consectetur
-      adipiscing elit.
-      Nullam eget orci purus. Nullam ultrices neque nibh.
-      Aenean fermentum, felis vulputate suscipit accumsan,
-      sem enim bibendum augue, sed convallis arcu lacus at dui.
-      Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
-      Praesent felis nibh, eleifend id eleifend id, dictum id enim.
-      Praesent venenatis erat non augue suscipit consectetur.
->>>>>>> upstream/master
+  - role: 'Software Engineer and Lecturer'
+    company: 'Various Roles'
+    period: '2011 - 2014'
+    location: 'Pakistan and Remote'
+    details:
+      - 'Delivered web and mobile (Android) applications, contributing to full stack development and system design.'
+      - 'Provided technical guidance in small team environments and supported junior developers.'
+      - 'Served as a visiting lecturer in Computer Science, teaching software engineering fundamentals.'
 
 projects:
-  title: Projects
-  intro: >
-<<<<<<< HEAD
-    You can list your side projects in this
-    section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
-  assignments:
-    - title: Velocity
-      link: "#hook"
-      tagline: "A responsive website template designed to help startups promote, market and sell their products."
+  - name: 'PeerMiles (PhD Project)'
+    organisation: 'KMi - The Open University'
+    year: '2022'
+    details:
+      - 'Built a full stack decentralised application using Solidity, Node.js and Express, Web3, and Vue.js.'
+      - 'Designed and deployed ERC-20 and ERC-721 smart contracts supporting verifiable academic reputation workflows.'
+      - 'Integrated ORCID and Solid for decentralised identity and authentication.'
+      - 'Delivered a working prototype validated through user studies and pilot deployments.'
 
-    - title: DevStudio
-      link: "#"
-      tagline: "A responsive website template designed to help web developers/designers market their services."
+education:
+  - degree: 'Ph.D. Computer Science'
+    institution: 'KMi - The Open University'
+    year: '2022'
+    details: 'Thesis: Peer review on a decentralised web'
 
-    - title: Tempo
-      link: "#"
-      tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
+  - degree: 'M.Sc. Advanced Software Engineering'
+    institution: 'University of Leicester'
+    year: '2010 - 2011'
+    details: 'Score: Distinction'
 
-    - title: Atom
-      link: "#"
-      tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
-
-    - title: Delta
-      link: "#"
-      tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
-=======
-    You can list your side projects in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
-  assignments:
-  - title: Velocity
-    link: "#hook"
-    tagline: "A responsive website template designed to help startups promote, market and sell their products."
-
-  - title: DevStudio
-    link: "#"
-    tagline: "A responsive website template designed to help web developers/designers market their services."
-
-  - title: Tempo
-    link: "#"
-    tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
-
-  - title: Atom
-    link: "#"
-    tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
-
-  - title: Delta
-    link: "#"
-    tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
->>>>>>> upstream/master
-
-oss:
-  title: OSS Contributions
-  intro: >
-<<<<<<< HEAD
-    You can list your open source software contributions in this
-    section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
-  contributions:
-    - title: Tempo
-      link: "#"
-      tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
-
-    - title: Atom
-      link: "#"
-      tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
-
-    - title: Delta
-      link: "#"
-      tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
-=======
-    You can list your open source software contributions in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
-  contributions:
-  - title: Tempo
-    link: "#"
-    tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
-
-  - title: Atom
-    link: "#"
-    tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
-
-  - title: Delta
-    link: "#"
-    tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
->>>>>>> upstream/master
-
-publications:
-  title: Publications
-  intro: |
-    You can list your publications in this section. Lorem ipsum dolor sit
-    amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
-    bibendum fringilla a eu lectus.
-  papers:
-<<<<<<< HEAD
-    - title: The Art of Computer Programming
-      link: "#"
-      authors: Donald E. Knuth
-      conference: Addison-Wesley, 1968
-
-    - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
-      link: "#"
-      authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
-      conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
-
-    - title: A syntax directed compiler for Algol 60
-      link: "#"
-      authors: Edgar T. Irons
-      conference: "Comm. ACM 4 (1961), 51–55"
-=======
-  - title: The Art of Computer Programming
-    link: "#"
-    authors: Donald E. Knuth
-    conference: Addison-Wesley, 1968
-
-  - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
-    link: "#"
-    authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
-    conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
-
-  - title: A syntax directed compiler for Algol 60
-    link: "#"
-    authors: Edgar T. Irons
-    conference: "Comm. ACM 4 (1961), 51–55"
-
-recommendations:
-  title: Recommendations
-  list:
-  - person: Yareli Perez
-    email: perezyareli@example.com
-    phone: 012 345 6789
-    role: General Director at example.com
-    recommendation: |
-      Alan Doe is a super employee!
-  - person: Lara Henderson
-    email: larah@example.com
-    phone: 012 345 6789
-    role: General Director at example.com
-    recommendation: |
-      I would like to work with Alan Doe again!
-
-      He is a great employee!
->>>>>>> upstream/master
+  - degree: 'BS (Hons) Computer Science'
+    institution: 'Bahauddin Zakariya University'
+    year: '2004 - 2008'
 
 skills:
-  title: Skills &amp; Proficiency
+  - category: 'Backend and Systems'
+    items: 'Python, Java, TypeScript, Node.js, Express, REST APIs, distributed systems, microservices, data pipelines'
 
-  toolset:
-<<<<<<< HEAD
-    - name: Python & Django
-      level: 98%
+  - category: 'Frontend'
+    items: 'React, Next.js, TypeScript, JavaScript'
 
-    - name: Javascript & jQuery
-      level: 98%
+  - category: 'Infrastructure'
+    items: 'Docker, Git, CI/CD, GitHub Actions, Ubuntu, containerised deployments'
 
-    - name: Angular
-      level: 98%
+  - category: 'Blockchain and DLT'
+    items: 'Ethereum and EVM, Bitcoin, Cardano, Ripple, ERC-20 and ERC-721, Web3, Hardhat'
 
-    - name: HTML5 & CSS
-      level: 95%
+  - category: 'Languages'
+    items: 'Python, Java, TypeScript, JavaScript, Solidity, beginner Rust'
 
-    - name: Ruby on Rails
-      level: 85%
-
-    - name: Sketch & Photoshop
-      level: 60%
-=======
-  - name: Python & Django
-    level: 98%
-
-  - name: Javascript & jQuery
-    level: 98%
-
-  - name: Angular
-    level: 98%
-
-  - name: HTML5 & CSS
-    level: 95%
-
-  - name: Ruby on Rails
-    level: 85%
-
-  - name: Sketch & Photoshop
-    level: 60%
->>>>>>> upstream/master
-
-footer: >
-  Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
+languages:
+  - name: 'English'
+    level: 'Fluent'
+  - name: 'Urdu'
+    level: 'Fluent'
