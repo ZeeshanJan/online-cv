@@ -4,8 +4,8 @@
 
 sidebar:
   position: right # position of the sidebar : left or right
-  about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
-  education: True # set to False if you want education in main section instead of in sidebar
+  about: False # set to False or comment line if you want to remove the "how to use?" in the sidebar
+  education: False # set to False if you want education in main section instead of in sidebar
 
   # Profile information
   name: Zeeshan Jan
@@ -49,23 +49,17 @@ sidebar:
   interests:
     title: Interests
     info:
-      - item: Climbing
-        link:
-
-      - item: Snowboarding
-        link:
-
-      - item: Cooking
+      - item: Cricket & Badminton
         link:
 
 career-profile:
   title: Career Profile
   summary: |
-    Senior and Lead Research Software Engineer with experience across distributed systems,
-    blockchain, Semantic Web technologies, IoT, and linked data. I build high integrity data pipelines,
-    APIs, and Web3 applications in Solidity, Python, TypeScript, and Java. 
-    I translate complex analytical requirements into clean, reliable architectures and prioritise reproducibility,
-    observability, and correctness for real time systems.
+    Software Engineer specialising in distributed systems, blockchain engineering, and backend development across
+    Python, Java, and TypeScript. Experienced in building data pipelines, APIs, and DLT-integrated services across multiple 
+    blockchain ecosystems. Proven ability to collaborate with cross-functional teams, translate complex requirements into 
+    robust engineering solutions, and deliver secure, high-integrity systems. Strong advocate for clean architecture, CI/CD,
+    observability, and reproducible engineering practices.
 education:
   title: Education
   info:
@@ -93,28 +87,25 @@ experiences:
       time: 2023 - Present
       company: University of Edinburgh, UK.
       details: |
-        Describe your role here lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-        Cum sociis natoque penatibus et magnis dis parturient montes,
-        nascetur ridiculus mus. Donec quam felis, ultricies nec,
-        pellentesque eu, pretium quis, sem. Nulla consequat massa quis
-        enim. Donec pede justo. Sed ut perspiciatis unde omnis iste natus
-        error sit voluptatem accusantium doloremque laudantium, totam rem
-        aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-        architecto beatae vitae dicta sunt explicabo.
-          - Bullet point
-          - Bullet point
-    - role: Senior Software Engineer
-      time: 2014 - 2015
-      company: Google, London
+        Describe your role here
+          - Lead engineer for the Edinburgh Decentralisation Index, designing and implementing distributed data ingestion and analytics pipelines using Python, TypeScript, and containerised microservices.
+          - Built and maintained backend APIs supporting high-integrity blockchain data extraction across multiple protocols.
+          - Operated and maintained archival blockchain nodes (Bitcoin, Ethereum, Cardano, Ripple), ensuring secure and reproducible data collection.
+          - Delivered a modern React/TypeScript dashboard enabling interactive exploration of decentralisation metrics.
+          - Improved engineering workflows through CI/CD automation,
+            observability enhancements, and reproducible environments.
+    - role: Blockchain Lead
+      time: 2021 - 2022
+      company: Niftysplits, London
       details: |
         Describe your role here lorem ipsum dolor sit amet, consectetuer
         adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
         Cum sociis natoque penatibus et magnis dis parturient montes,
         nascetur ridiculus mus. Donec quam felis, ultricies nec,
         pellentesque eu, pretium quis, sem.
-          - Bullet point
-          - Bullet point
+          - Designed and implemented backend services and distributed workflows for an NFT-based gaming platform using TypeScript/Node.js.
+          - Built real-time blockchain indexing services, event listeners, and secure wallet authentication flows.
+          - Developed and tested ERC-721 and custom smart contracts using Hardhat and OpenZeppelin.
     - role: UI Developer
       time: 2012 - 2014
       company: Amazon, London
