@@ -20,6 +20,11 @@ analytics: G-VB9466ZV0G
 sass:
   sass_dir: _sass
   style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+  # Keep local output clean while using legacy SCSS patterns in this theme.
+  silence_deprecations:
+    - import
+    - global-builtin
+    - color-functions
 
 # Build settings
 compress-site: yes
