@@ -8,6 +8,4 @@ _site/
 assets/.DS_Store
 assets/docs/
 
-_data/data.yml
 
-_config.yml

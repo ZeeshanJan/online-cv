@@ -71,33 +71,27 @@ education:
   info:
     - degree: PhD
       university: KMi - The Open University (UK)
-      time: 2011 - 2012
+      time: 2017 - 2022
       details: |
-        Describe your study here lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-        sociis natoque penatibus et magnis dis parturient montes, nascetur
-        ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-        pretium quis, sem.
-          - Bullet point
-          - Bullet point
-    - degree: BSc in Applied Mathematics
-      university: Bristol University
-      time: 2007 - 2011
+        Thesis: Peer review on a decentralised web.
+
+    - degree: M.Sc in Advanced Software Engineering
+      university: University of Leicester (UK)
+      time: 2010 - 2011
       details: |
-        Describe your study here lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-        sociis natoque penatibus et magnis dis parturient montes, nascetur
-        ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-        pretium quis, sem.
-          - Bullet point
-          - Bullet point
+        Score: Distinction
+
+    - degree: BS (Hons) in Computer Science
+      university: Bahauddin Zakariya University (Pakistan)
+      time: 2004 - 2008
+      details: |
 
 experiences:
   title: Experiences
   info:
-    - role: Lead Developer
-      time: 2015 - Present
-      company: Startup Hubs, San Francisco
+    - role: Research Engineer
+      time: 2023 - Present
+      company: University of Edinburgh, UK.
       details: |
         Describe your role here lorem ipsum dolor sit amet, consectetuer
         adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
