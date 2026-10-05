@@ -1,0 +1,2 @@
+{% assign icon = site.data.icons[include.name] %}
+<svg class="icon{% if include.class %} {{ include.class }}{% endif %}" viewBox="{{ icon.viewbox }}" width="16" height="16" fill="currentColor" aria-hidden="true" focusable="false">{% for p in icon.paths %}<path d="{{ p }}"/>{% endfor %}</svg>

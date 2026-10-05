@@ -30,13 +30,17 @@
   <div class="container-block sidebar-actions-container">
     <h2 class="container-block-title">Export</h2>
     <div class="sidebar-actions">
-      <button onclick="print()" class="print-button d-print-none">
-        <i class="fas fa-print"></i>Print
-      </button>
       <button onclick="generatePDF()" class="pdf-button d-print-none" id="pdfButton">
-        <i class="fas fa-file-pdf"></i>PDF
+        {% include icon.html name="file-pdf" %}PDF
       </button>
     </div>
+  </div>
+  {% endif %}
+
+  {% if page.layout == 'print' and sidebar.website %}
+  <div class="container-block qr-block">
+    <img src="{{ site.baseurl }}/assets/images/qr-cv.png" alt="QR code linking to {{ sidebar.website }}" width="96" height="96" />
+    <p>{{ sidebar.website | remove: 'https://' }}</p>
   </div>
   {% endif %}
 

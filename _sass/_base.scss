@@ -1,18 +1,66 @@
 /* ======= Base ======= */
+/* Bootstrap used to provide this reset; the grid/padding layout below
+   depends on border-box sizing, so it's kept explicit now that it's gone. */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 @counter-style hex-tick {
   system: numeric;
   symbols: "0" "1" "2" "3" "4" "5" "6" "7" "8" "9" "a" "b" "c" "d" "e" "f";
   suffix: "";
 }
 
+/* Runtime theme tokens for the "pages" (main content). The sidebar "cover"
+   stays a constant dark ink in both themes, so it isn't tokenized here. */
+:root {
+  --page-bg: #e3e6dd;
+  --paper: #{$paper};
+  --paper-raised: #{$paper-raised};
+  --ink: #{$ink};
+  --ink-soft: #{$ink-soft};
+  --hairline: #{$hairline};
+  --mono-grey: #{$mono-grey};
+  --petrol: #{$petrol};
+  --stamp: #{$stamp};
+  --stamp-soft: #{$stamp-soft};
+  --stamp-ring: rgba(46, 110, 73, 0.16);
+  --stamp-glow: rgba(46, 110, 73, 0.6);
+  --wrapper-border: rgba(27, 29, 34, 0.06);
+  --wrapper-shadow-1: rgba(0, 0, 0, 0.06);
+  --wrapper-shadow-2: rgba(27, 29, 34, 0.35);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --page-bg: #0f1011;
+    --paper: #18191c;
+    --paper-raised: #202225;
+    --ink: #edefea;
+    --ink-soft: #c2c7c1;
+    --hairline: #2e3134;
+    --mono-grey: #8b958f;
+    --petrol: #7bb3d1;
+    --stamp: #52a378;
+    --stamp-soft: rgba(82, 163, 120, 0.28);
+    --stamp-ring: rgba(82, 163, 120, 0.25);
+    --stamp-glow: rgba(82, 163, 120, 0.8);
+    --wrapper-border: rgba(255, 255, 255, 0.08);
+    --wrapper-shadow-1: rgba(0, 0, 0, 0.5);
+    --wrapper-shadow-2: rgba(0, 0, 0, 0.65);
+  }
+}
+
 html {
-  background: #e3e6dd;
+  background: var(--page-bg);
 }
 
 body {
   font-family: $font-body;
-  color: $ink-soft;
-  background: #e3e6dd;
+  color: var(--ink-soft);
+  background: var(--page-bg);
   font-size: 15px;
   line-height: 1.6;
   padding: 30px;
@@ -28,11 +76,11 @@ h5,
 h6 {
   font-family: $font-display;
   font-weight: 600;
-  color: $ink;
+  color: var(--ink);
 }
 
 a {
-  color: $petrol;
+  color: var(--petrol);
   text-decoration: none;
   background-image: linear-gradient(currentColor, currentColor);
   background-position: 0 100%;
@@ -53,8 +101,26 @@ p {
 }
 
 ::selection {
-  background: $stamp-soft;
-  color: $ink;
+  background: var(--stamp-soft);
+  color: var(--ink);
+}
+
+.skip-link {
+  position: absolute;
+  top: -48px;
+  left: 12px;
+  z-index: 2000;
+  background: $ink;
+  color: #fff;
+  padding: 10px 18px;
+  font-family: $font-mono;
+  font-size: 13px;
+  text-decoration: none;
+  transition: top 0.15s ease;
+
+  &:focus {
+    top: 12px;
+  }
 }
 
 /* ======= Page shell ======= */
@@ -64,12 +130,12 @@ p {
   max-width: 1040px;
   margin: 0 auto;
   position: relative;
-  background: $paper;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06), 0 18px 40px -20px rgba(27, 29, 34, 0.35);
-  border: 1px solid rgba(27, 29, 34, 0.06);
+  background: var(--paper);
+  box-shadow: 0 1px 2px var(--wrapper-shadow-1), 0 18px 40px -20px var(--wrapper-shadow-2);
+  border: 1px solid var(--wrapper-border);
 }
 
-/* ======= Sidebar — the "cover" ======= */
+/* ======= Sidebar — the "cover" (always dark, not theme-dependent) ======= */
 .sidebar-wrapper {
   grid-column: span 3;
   order: $sidebar-order;
@@ -124,17 +190,17 @@ p {
   }
 
   .contact-list {
-    .fas,
-    .fab,
-    .far {
+    .icon {
       margin-right: 10px;
-      font-size: 14px;
-      width: 16px;
-      text-align: center;
+      width: 14px;
+      height: 14px;
       vertical-align: middle;
-      color: $stamp-soft;
+      fill: $stamp-soft;
+      flex: none;
     }
     li {
+      display: flex;
+      align-items: center;
       margin-bottom: 13px;
       font-size: 13px;
       word-break: break-word;
@@ -144,6 +210,8 @@ p {
     }
     a {
       color: rgba(255, 255, 255, 0.82);
+      display: inline-flex;
+      align-items: center;
     }
   }
 
@@ -204,13 +272,29 @@ p {
       }
     }
   }
+
+  .qr-block {
+    text-align: center;
+    img {
+      width: 96px;
+      height: 96px;
+      background: #fff;
+      padding: 6px;
+    }
+    p {
+      margin: 10px 0 0;
+      font-family: $font-mono;
+      font-size: 11px;
+      color: rgba(255, 255, 255, 0.55);
+    }
+  }
 }
 
 /* ======= Main — the "pages" ======= */
 .main-wrapper {
   grid-column: span 7;
   order: $resume-order;
-  background: $paper;
+  background: var(--paper);
   padding: 44px 56px;
 
   .section-title {
@@ -219,7 +303,7 @@ p {
     font-size: 12px;
     font-weight: 500;
     letter-spacing: 0.1em;
-    color: $mono-grey;
+    color: var(--mono-grey);
     position: relative;
     margin-top: 0;
     margin-bottom: 24px;
@@ -236,8 +320,8 @@ p {
       width: 7px;
       height: 7px;
       border-radius: 50%;
-      background: $stamp;
-      box-shadow: 0 0 0 3px rgba(46, 110, 73, 0.16), 0 0 7px rgba(46, 110, 73, 0.6);
+      background: var(--stamp);
+      box-shadow: 0 0 0 3px var(--stamp-ring), 0 0 7px var(--stamp-glow);
       flex: none;
     }
   }
@@ -245,7 +329,7 @@ p {
   .section {
     margin-bottom: 44px;
     padding-top: 36px;
-    border-top: 1px solid $hairline;
+    border-top: 1px solid var(--hairline);
 
     &:first-child {
       padding-top: 0;
@@ -284,7 +368,7 @@ p {
   .cert-title,
   .recommendation-person {
     font-family: $font-display;
-    color: $ink;
+    color: var(--ink);
     font-size: 16.5px;
     margin-top: 0;
     margin-bottom: 0;
@@ -298,7 +382,7 @@ p {
     margin-left: auto;
     font-family: $font-mono;
     font-size: 11.5px;
-    color: $mono-grey;
+    color: var(--mono-grey);
     white-space: nowrap;
     flex: none;
   }
@@ -311,7 +395,7 @@ p {
     font-size: 12px;
     letter-spacing: 0.01em;
     margin-bottom: 10px;
-    color: $mono-grey;
+    color: var(--mono-grey);
   }
 
   .details {
@@ -327,13 +411,16 @@ p {
         padding-left: 2.6em;
         margin-bottom: 9px;
         &::before {
-          content: "0x" counter(hexline, hex-tick);
+          /* The part after "/" is the CSS alt-text for this generated content —
+             an empty string tells assistive tech to skip it, since it's a purely
+             visual index and not meant to be read aloud per line. */
+          content: "0x" counter(hexline, hex-tick) / "";
           position: absolute;
           left: 0;
           top: 0;
           font-family: $font-mono;
           font-size: 11px;
-          color: $mono-grey;
+          color: var(--mono-grey);
         }
       }
     }
@@ -345,17 +432,17 @@ p {
     font-weight: 600;
     margin-top: 0;
     margin-bottom: 5px;
-    color: $petrol;
+    color: var(--petrol);
   }
   .project-tagline {
-    color: $ink-soft;
+    color: var(--ink-soft);
   }
   .projects-section,
   .oss-section {
     counter-reset: hexline;
     .intro {
       margin-bottom: 24px;
-      color: $ink-soft;
+      color: var(--ink-soft);
     }
     .item {
       counter-increment: hexline;
@@ -363,13 +450,13 @@ p {
       padding-left: 2.6em;
       position: relative;
       &::before {
-        content: "0x" counter(hexline, hex-tick);
+        content: "0x" counter(hexline, hex-tick) / "";
         position: absolute;
         left: 0;
         top: 1px;
         font-family: $font-mono;
         font-size: 11px;
-        color: $mono-grey;
+        color: var(--mono-grey);
       }
     }
   }
@@ -385,21 +472,21 @@ p {
         font-family: $font-display;
         font-size: 15px;
         font-weight: 600;
-        color: $ink;
+        color: var(--ink);
       }
     }
     .publication-authors {
       font-family: $font-mono;
       font-size: 12px;
       font-style: normal;
-      color: $ink-soft;
+      color: var(--ink-soft);
       margin-top: 3px;
       margin-bottom: 1px;
     }
     .publication-conference {
       font-family: $font-mono;
       font-size: 11.5px;
-      color: $mono-grey;
+      color: var(--mono-grey);
     }
   }
 }
@@ -416,7 +503,7 @@ p {
     top: 6px;
     bottom: 6px;
     width: 1px;
-    background: $hairline;
+    background: var(--hairline);
   }
 
   .item {
@@ -434,14 +521,14 @@ p {
     width: 9px;
     height: 9px;
     border-radius: 100%;
-    background: $paper;
-    border: 2px solid $mono-grey;
+    background: var(--paper);
+    border: 2px solid var(--mono-grey);
   }
 
   .item.is-current .block-node {
-    border-color: $stamp;
-    background: $stamp;
-    box-shadow: 0 0 0 3px $stamp-soft;
+    border-color: var(--stamp);
+    background: var(--stamp);
+    box-shadow: 0 0 0 3px var(--stamp-soft);
   }
 
   .block-index {
@@ -449,12 +536,12 @@ p {
     font-family: $font-mono;
     font-size: 10.5px;
     letter-spacing: 0.08em;
-    color: $mono-grey;
+    color: var(--mono-grey);
     margin-bottom: 6px;
   }
 
   .item.is-current .block-index {
-    color: $stamp;
+    color: var(--stamp);
   }
 }
 
@@ -471,7 +558,7 @@ p {
     text-transform: uppercase;
     font-size: 11px;
     letter-spacing: 0.07em;
-    color: $mono-grey;
+    color: var(--mono-grey);
     margin: 0 0 10px;
   }
   .pills {
@@ -482,9 +569,9 @@ p {
   .pill {
     font-family: $font-body;
     font-size: 13px;
-    color: $ink-soft;
-    background: $paper-raised;
-    border: 1px solid $hairline;
+    color: var(--ink-soft);
+    background: var(--paper-raised);
+    border: 1px solid var(--hairline);
     padding: 4px 11px;
     line-height: 1.5;
   }
@@ -496,12 +583,18 @@ p {
   .copyright {
     font-family: $font-mono;
     line-height: 1.6;
-    color: rgba(27, 29, 34, 0.45);
+    color: var(--mono-grey);
     font-size: 11.5px;
   }
 
-  .fa-heart {
-    color: $stamp;
+  .heart {
+    color: var(--stamp);
+  }
+
+  .last-synced {
+    display: block;
+    margin-top: 4px;
+    opacity: 0.65;
   }
 }
 
@@ -510,7 +603,6 @@ p {
   gap: 10px;
 }
 
-.print-button,
 .pdf-button {
   flex: 1;
   background: transparent;
@@ -543,8 +635,11 @@ p {
     cursor: not-allowed;
   }
 
-  .fas {
+  .icon {
     margin-right: 6px;
+    width: 13px;
+    height: 13px;
+    fill: currentColor;
   }
 }
 
@@ -557,9 +652,9 @@ p {
 @keyframes node-pulse {
   0%,
   100% {
-    box-shadow: 0 0 0 3px rgba(46, 110, 73, 0.16), 0 0 7px rgba(46, 110, 73, 0.6);
+    box-shadow: 0 0 0 3px var(--stamp-ring), 0 0 7px var(--stamp-glow);
   }
   50% {
-    box-shadow: 0 0 0 5px rgba(46, 110, 73, 0.08), 0 0 12px rgba(46, 110, 73, 0.85);
+    box-shadow: 0 0 0 5px var(--stamp-ring), 0 0 12px var(--stamp-glow);
   }
 }

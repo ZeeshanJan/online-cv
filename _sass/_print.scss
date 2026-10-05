@@ -1,3 +1,26 @@
+/* The printable layout (used both by the real Print button, via @media print
+   below, and by the PDF button, which renders this same markup through
+   html2canvas in normal screen media — so this override can't live inside
+   @media print alone, or the PDF would still pick up a dark system theme).
+   Paper is never dark: force the light palette unconditionally here. */
+.print-layout {
+  --page-bg: #e3e6dd;
+  --paper: #{$paper};
+  --paper-raised: #{$paper-raised};
+  --ink: #{$ink};
+  --ink-soft: #{$ink-soft};
+  --hairline: #{$hairline};
+  --mono-grey: #{$mono-grey};
+  --petrol: #{$petrol};
+  --stamp: #{$stamp};
+  --stamp-soft: #{$stamp-soft};
+  --stamp-ring: rgba(46, 110, 73, 0.16);
+  --stamp-glow: rgba(46, 110, 73, 0.6);
+  --wrapper-border: rgba(27, 29, 34, 0.06);
+  --wrapper-shadow-1: rgba(0, 0, 0, 0.06);
+  --wrapper-shadow-2: rgba(27, 29, 34, 0.35);
+}
+
 @media print {
   @page {
     size: A4;
@@ -6,40 +29,86 @@
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
+
   html,
   body {
     font-size: 9pt;
     background-color: white;
     padding: 0;
   }
+
+  /* A side-by-side CSS Grid doesn't paginate across printed pages — browsers
+     size the grid row to the TALLEST column, so once the short sidebar column
+     runs out of content, every later page shows a tall blank gap where it
+     used to be instead of repeating the sidebar. Stack to one column for
+     print instead: sidebar becomes a letterhead-style header band, main
+     content flows beneath it and paginates normally. */
   .wrapper {
+    display: block;
     max-width: 100%;
     box-shadow: none;
     border: none;
   }
 
-  /* Flatten the dark "cover" sidebar to plain ink-on-white for print. */
+  /* Flatten the dark "cover" sidebar to a plain ink-on-white letterhead. */
   .sidebar-wrapper {
+    width: 100%;
     position: static;
     background: #fff !important;
     color: $ink !important;
-    border-right: 1px solid $hairline;
+    border-right: none;
+    border-bottom: 2px solid $hairline;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
 
     a {
       color: $ink !important;
       background-image: none;
     }
+
+    .profile-container {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-align: left;
+      padding: 16px 20px;
+      border-bottom: none;
+      border-right: 1px solid $hairline;
+    }
+    .avatar {
+      margin-bottom: 0;
+    }
+    .name {
+      font-size: 19px;
+    }
+
+    .contact-list,
+    .languages-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px 18px;
+    }
+    .contact-list li,
+    .languages-list li {
+      margin-bottom: 0;
+    }
+
     .profile-container,
     .container-block {
       border-bottom-color: $hairline !important;
+      border-right: 1px solid $hairline;
+      padding: 16px 20px;
+    }
+    .container-block:last-child {
+      border-right: none;
     }
     .tagline {
       color: $mono-grey !important;
     }
-    .contact-list .fas,
-    .contact-list .fab,
-    .contact-list .far {
-      color: $stamp !important;
+    .contact-list .icon {
+      fill: $stamp !important;
     }
     .contact-list a {
       color: $ink-soft !important;
@@ -47,6 +116,24 @@
     .container-block-title {
       color: $stamp !important;
     }
+
+    .qr-block {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      img {
+        width: 56px;
+        height: 56px;
+      }
+      p {
+        margin: 0;
+        color: $mono-grey !important;
+      }
+    }
+  }
+
+  .main-wrapper {
+    width: 100%;
   }
 
   .main-wrapper .time {
@@ -74,7 +161,6 @@
   }
 
   /* Hide buttons when printing */
-  .print-button,
   .pdf-button,
   .d-print-none {
     display: none !important;
