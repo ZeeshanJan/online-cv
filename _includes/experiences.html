@@ -9,10 +9,19 @@
     {{ experiences.title }}
   </h2>
 
+  <div class="chain">
+  {% assign total = experiences.info.size %}
   {% for experience in experiences.info %}
-  <div class="item">
+  {% assign block_num = total | minus: forloop.index | plus: 1 %}
+  {% assign block_padded = block_num | prepend: "000" | slice: -4, 4 %}
+  {% assign is_current = false %}
+  {% if experience.time contains "Present" %}{% assign is_current = true %}{% endif %}
+  <div class="item{% if is_current %} is-current{% endif %}">
+    <span class="block-node"></span>
 
     <div class="meta">
+
+      <span class="block-index">BLOCK {{ block_padded }}{% if is_current %} · CURRENT{% endif %}</span>
 
       <div class="upper-row">
         <h3 class="job-title">{{ experience.role }}</h3>
@@ -31,6 +40,7 @@
 
   </div><!--//item-->
   {% endfor %}
+  </div><!--//chain-->
 
 </section><!--//section-->
 {% endif %}

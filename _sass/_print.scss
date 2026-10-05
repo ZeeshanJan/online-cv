@@ -2,6 +2,11 @@
   @page {
     size: A4;
   }
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  html,
   body {
     font-size: 9pt;
     background-color: white;
@@ -9,23 +14,43 @@
   }
   .wrapper {
     max-width: 100%;
+    box-shadow: none;
+    border: none;
   }
 
-  //   img.avatar {
-  //     filter: grayscale(1);
-  //     -webkit-filter: greyscale(1);
-  //   }
-  .main-wrapper .time {
-    padding: 10px 30px 10px 10px;
-    //  float: right;
-    //  color: black !important;
-    -webkit-print-color-adjust: exact;
-  }
+  /* Flatten the dark "cover" sidebar to plain ink-on-white for print. */
   .sidebar-wrapper {
     position: static;
-    //  float: right;
-    //  width: 40%;
-    -webkit-print-color-adjust: exact;
+    background: #fff !important;
+    color: $ink !important;
+    border-right: 1px solid $hairline;
+
+    a {
+      color: $ink !important;
+      background-image: none;
+    }
+    .profile-container,
+    .container-block {
+      border-bottom-color: $hairline !important;
+    }
+    .tagline {
+      color: $mono-grey !important;
+    }
+    .contact-list .fas,
+    .contact-list .fab,
+    .contact-list .far {
+      color: $stamp !important;
+    }
+    .contact-list a {
+      color: $ink-soft !important;
+    }
+    .container-block-title {
+      color: $stamp !important;
+    }
+  }
+
+  .main-wrapper .time {
+    padding: 0;
   }
 
   .remove-container.container-block {
@@ -37,25 +62,21 @@
   }
 
   .skillset,
-  .container-block {
+  .container-block,
+  .chain .item {
     break-inside: avoid;
   }
 
-  .skillset .level-bar-inner {
-    background-color: $theme-color !important;
-    -webkit-print-color-adjust: exact;
+  .fa-inverse,
+  .fa-inverse:after,
+  .fa-inverse:before {
+    color: #ffffff !important;
   }
 
-   .fa-inverse,
-   .fa-inverse:after,
-   .fa-inverse:before {
-     color: #ffffff !important;
-   }
-
-    /* Hide buttons when printing */
-    .print-button,
-    .pdf-button,
-    .d-print-none {
-        display: none !important;
-    }
+  /* Hide buttons when printing */
+  .print-button,
+  .pdf-button,
+  .d-print-none {
+    display: none !important;
+  }
 }

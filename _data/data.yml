@@ -46,12 +46,6 @@ sidebar:
       - idiom: Punjabi
         level: Native
 
-  interests:
-    title: Interests
-    info:
-      - item: Cricket & Badminton
-        link:
-
 career-profile:
   title: Career Profile
   summary: |
@@ -110,6 +104,11 @@ experiences:
       company: Multiple companies, Pakistan & Remote
       details: |
           - Delivered client-facing web and mobile applications and internal tools across several software engineering roles, providing technical guidance in small-team settings.
+    - role: Visiting Lecturer
+      time: 2011 - 2014
+      company: Bahauddin Zakariya University, Multan, Pakistan
+      details: |
+          - Taught undergraduate courses — including Object-Oriented Programming and Semantic Web — across the Department of Computer Science and the Department of Computer Engineering.
 
 projects:
   title: Projects
@@ -167,23 +166,23 @@ skills:
   title: Skills &amp; Proficiency
 
   toolset:
-    - name: 'Backend: Node.js, TypeScript, Express, RESTful APIs, WebSockets, Python, Java'
-      level: 100%
+    - category: Backend
+      items: [Node.js, TypeScript, Express, RESTful APIs, WebSockets, Python, Java]
 
-    - name: 'Databases: PostgreSQL, Redis, MongoDB'
-      level: 100%
+    - category: Databases
+      items: [PostgreSQL, Redis, MongoDB]
 
-    - name: 'Frontend: React, Next.js, JavaScript, Vue.js'
-      level: 100%
+    - category: Frontend
+      items: [React, Next.js, JavaScript, Vue.js]
 
-    - name: 'Infrastructure: Docker, GitHub Actions, CI/CD, Git, observability tooling'
-      level: 100%
+    - category: Infrastructure
+      items: [Docker, GitHub Actions, CI/CD, Git, Observability tooling]
 
-    - name: 'Digital Assets: Ethereum/EVM, Bitcoin, Cardano, Ripple, Solidity, ERC-20/721, Hardhat, OpenZeppelin, Web3.js'
-      level: 100%
+    - category: Digital Assets
+      items: [Ethereum/EVM, Bitcoin, Cardano, Ripple, Solidity, ERC-20/721, Hardhat, OpenZeppelin, Web3.js]
 
-    - name: 'AI Development Tools: Claude Code, GitHub Copilot'
-      level: 100%
+    - category: AI Development Tools
+      items: [Claude Code, GitHub Copilot]
 
 footer: >
   Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
