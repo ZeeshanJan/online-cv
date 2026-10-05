@@ -458,38 +458,6 @@ p {
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .chain .item {
-    animation: block-settle 0.5s ease backwards;
-  }
-  .chain .item:nth-child(1) {
-    animation-delay: 0.05s;
-  }
-  .chain .item:nth-child(2) {
-    animation-delay: 0.12s;
-  }
-  .chain .item:nth-child(3) {
-    animation-delay: 0.19s;
-  }
-  .chain .item:nth-child(4) {
-    animation-delay: 0.26s;
-  }
-  .chain .item:nth-child(n + 5) {
-    animation-delay: 0.3s;
-  }
-}
-
-@keyframes block-settle {
-  from {
-    opacity: 0;
-    transform: translateY(6px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 /* ======= Skills — tag groups, not fake precision bars ======= */
 .skillset {
   .category {
@@ -537,26 +505,33 @@ p {
   }
 }
 
+.sidebar-actions {
+  display: flex;
+  gap: 10px;
+}
+
 .print-button,
 .pdf-button {
-  position: fixed;
-  top: 20px;
-  z-index: 1000;
-  background: $ink;
-  color: #fff;
+  flex: 1;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.82);
   font-family: $font-mono;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  padding: 9px 16px;
+  padding: 9px 10px;
   border-radius: 2px;
-  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.22);
   cursor: pointer;
-  font-size: 11.5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: all 0.2s ease;
 
   &:hover {
     background: $stamp;
+    border-color: $stamp;
+    color: #fff;
   }
 
   &:active {
@@ -564,21 +539,13 @@ p {
   }
 
   &:disabled {
-    opacity: 0.7;
+    opacity: 0.6;
     cursor: not-allowed;
   }
 
   .fas {
     margin-right: 6px;
   }
-}
-
-.print-button {
-  right: 128px;
-}
-
-.pdf-button {
-  right: 20px;
 }
 
 @media (prefers-reduced-motion: no-preference) {

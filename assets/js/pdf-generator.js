@@ -15,7 +15,6 @@ function generatePDF() {
   fetch(printURL)
     .then((response) => response.text())
     .then((html) => {
-      // Create a temporary container
       const container = document.createElement("div");
       container.innerHTML = html;
 
@@ -26,13 +25,17 @@ function generatePDF() {
 
       // Configure pdf options
       const opt = {
-        margin: 10,
+        margin: 0,
         filename: filename,
         image: { type: "jpeg", quality: 0.98 },
         html2canvas: {
           scale: 2,
           useCORS: true,
           letterRendering: true,
+        },
+        pagebreak: {
+          mode: ["css", "legacy"],
+          avoid: [".item", ".chain .item"],
         },
         jsPDF: {
           unit: "mm",
