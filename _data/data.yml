@@ -9,7 +9,7 @@ sidebar:
 
   # Profile information
   name: Zeeshan Jan
-  tagline: Blockchain & Software Engineer
+  tagline: Software Engineer — Distributed Systems & Blockchain
   avatar: zjan.png #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
   # Sidebar links
@@ -32,7 +32,7 @@ sidebar:
   mastodon: # Please include your full Mastodon link here.
   hackerrank: # Please provide your HackerRank username.
   leetcode: # Please provide your LeetCode username.
-  pdf: # Add a PDF link here if you want to include a PDF custom version in your resume.
+  pdf: https://zeeshan.uk/ZeeshanJanCV.pdf
 
   languages:
     title: Languages
@@ -55,11 +55,11 @@ sidebar:
 career-profile:
   title: Career Profile
   summary: |
-    Software Engineer specialising in distributed systems, blockchain engineering, and backend development across
-    Python, Java, and TypeScript. Experienced in building data pipelines, APIs, and DLT-integrated services across multiple 
-    blockchain ecosystems. Proven ability to collaborate with cross-functional teams, translate complex requirements into 
-    robust engineering solutions, and deliver secure, high-integrity systems. Strong advocate for clean architecture, CI/CD,
-    observability, and reproducible engineering practices.
+    Software engineer with over ten years on the backend, plus enough frontend to ship complete products. Currently
+    at the University of Edinburgh, running archival nodes for four blockchain networks and building the data
+    pipelines, REST APIs and public React/TypeScript dashboard that sit on top of them. Before that, led
+    smart-contract and backend work at an NFT startup. Based in Edinburgh, used to working independently in remote
+    teams.
 education:
   title: Education
   info:
@@ -84,184 +84,106 @@ experiences:
   title: Experiences
   info:
     - role: Research Engineer
-      time: 2023 - Present
-      company: University of Edinburgh, UK.
+      time: Nov 2023 - Present
+      company: University of Edinburgh, Edinburgh, UK
       details: |
-        Describe your role here
-          - Lead engineer for the Edinburgh Decentralisation Index, designing and implementing distributed data ingestion and analytics pipelines using Python, TypeScript, and containerised microservices.
-          - Built and maintained backend APIs supporting high-integrity blockchain data extraction across multiple protocols.
-          - Operated and maintained archival blockchain nodes (Bitcoin, Ethereum, Cardano, Ripple), ensuring secure and reproducible data collection.
-          - Delivered a modern React/TypeScript dashboard enabling interactive exploration of decentralisation metrics.
-          - Improved engineering workflows through CI/CD automation,
-            observability enhancements, and reproducible environments.
+          - Led engineering for the Edinburgh Decentralisation Index, designing distributed ingestion and analytics pipelines across Bitcoin, Ethereum, Cardano, and Ripple — processing multi-TB of archival chain data.
+          - Operated and maintained full archival nodes across 4 blockchain protocols, ensuring high-integrity, reproducible, and reliable data collection for published research.
+          - Designed, documented, and built REST APIs and backend data services.
+          - Delivered a public, production React/TypeScript interactive dashboard for decentralisation data exploration.
+          - Reduced deployment friction by implementing CI/CD pipelines and observability tooling via GitHub Actions and containerised deployments.
     - role: Blockchain Lead
-      time: 2021 - 2022
-      company: Niftysplits, London
+      time: Oct 2021 - Jun 2022
+      company: Niftysplits, Remote (Contract)
       details: |
-        Describe your role here lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-        Cum sociis natoque penatibus et magnis dis parturient montes,
-        nascetur ridiculus mus. Donec quam felis, ultricies nec,
-        pellentesque eu, pretium quis, sem.
-          - Designed and implemented backend services and distributed workflows for an NFT-based gaming platform using TypeScript/Node.js.
-          - Built real-time blockchain indexing services, event listeners, and secure wallet authentication flows.
-          - Developed and tested ERC-721 and custom smart contracts using Hardhat and OpenZeppelin.
-    - role: UI Developer
-      time: 2012 - 2014
-      company: Amazon, London
+          - Architected distributed event-driven backend for an NFT gaming platform in TypeScript, handling real-time asset state tracking across blockchain events.
+          - Designed and deployed ERC-721 and custom smart contracts using Hardhat and OpenZeppelin, covering minting, ownership, and gameplay mechanics.
+          - Built REST and WebSocket APIs supporting live minting flows and in-game asset interactions.
+          - Implemented blockchain indexing components reducing asset state query latency for frontend consumers.
+    - role: Researcher
+      time: Dec 2014 - Aug 2017
+      company: NUI Galway, Insight Centre for Data Analytics, Galway, Ireland
       details: |
-        Describe your role here lorem ipsum dolor sit amet, consectetuer
-        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-        Cum sociis natoque penatibus et magnis dis parturient montes,
-        nascetur ridiculus mus. Donec quam felis, ultricies nec,
-        pellentesque eu, pretium quis, sem.
-          - Bullet point
-          - Bullet point
-
-certifications:
-  title: Certifications
-  list:
-    - name: CV Builder
-      start: 2020
-      end: 2021
-      organization: Microsoft
-      credentialid: 111-222
-      credentialurl: www.google.com
-      credentialname: Google
+          - Built Java-based distributed microservices for a platform-agnostic IoT framework, designing the VITAL ontology-based interoperability layer enabling standardised data exchange across 10 EU partner organisations.
+    - role: Software Engineer (Web & Mobile)
+      time: 2011 - 2014
+      company: Multiple companies, Pakistan & Remote
       details: |
-        Details about cert. Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit.
-        Nullam eget orci purus. Nullam ultrices neque nibh.
-        Aenean fermentum, felis vulputate suscipit accumsan,
-        sem enim bibendum augue, sed convallis arcu lacus at dui.
-        Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
-        Praesent felis nibh, eleifend id eleifend id, dictum id enim.
-        Praesent venenatis erat non augue suscipit consectetur.
-
-        Second paragraph. Sed eleifend enim ante, vitae efficitur purus
-        fringilla vel. Ut euismod, sem sed vulputate venenatis,
-        justo diam viverra velit, sed rhoncus leo leo eu justo.
-        Suspendisse placerat risus ante, sed porta nisi blandit at.
-    - name: Git learning
-      start: 2019
-      end:
-      organization: Microsoft
-      credentialid: 111-222
-      credentialurl: www.github.com
-      credentialname: Github
-      details: |
-        Older certification. Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit.
-        Nullam eget orci purus. Nullam ultrices neque nibh.
-        Aenean fermentum, felis vulputate suscipit accumsan,
-        sem enim bibendum augue, sed convallis arcu lacus at dui.
-        Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
-        Praesent felis nibh, eleifend id eleifend id, dictum id enim.
-        Praesent venenatis erat non augue suscipit consectetur.
+          - Delivered client-facing web and mobile applications and internal tools across several software engineering roles, providing technical guidance in small-team settings.
 
 projects:
   title: Projects
-  intro: >
-    You can list your side projects in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
   assignments:
-    - title: Velocity
-      link: '#hook'
-      tagline: 'A responsive website template designed to help startups promote, market and sell their products.'
+    - title: Edinburgh Decentralisation Index
+      link: 'https://blockchainlab.inf.ed.ac.uk/edi-dashboard/'
+      tagline: 'Public analytics dashboard measuring decentralisation across Bitcoin, Ethereum, Cardano, and Ripple.'
 
-    - title: DevStudio
-      link: '#'
-      tagline: 'A responsive website template designed to help web developers/designers market their services.'
+    - title: ytclip
+      link: 'https://ytclip.xyz'
+      tagline: 'Self-hosted, open-source YouTube clip downloader — web app and CLI.'
 
-    - title: Tempo
-      link: '#'
-      tagline: 'A responsive website template designed to help startups promote their products or services and to attract users &amp; investors'
+    - title: PeerMiles
+      link:
+      tagline: 'Full-stack decentralised academic credentialing dApp on Ethereum (archived PhD project, The Open University).'
 
-    - title: Atom
-      link: '#'
-      tagline: 'A comprehensive website template solution for startups/developers to market their mobile apps.'
-
-    - title: Delta
-      link: '#'
-      tagline: 'A responsive Bootstrap one page theme designed to help app developers promote their mobile apps'
-
-oss:
-  title: OSS Contributions
-  intro: >
-    You can list your open source software contributions in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
-  contributions:
-    - title: Tempo
-      link: '#'
-      tagline: 'A responsive website template designed to help startups promote their products or services and to attract users &amp; investors'
-
-    - title: Atom
-      link: '#'
-      tagline: 'A comprehensive website template solution for startups/developers to market their mobile apps.'
-
-    - title: Delta
-      link: '#'
-      tagline: 'A responsive Bootstrap one page theme designed to help app developers promote their mobile apps'
+    - title: VITAL
+      link:
+      tagline: 'Ontology-based interoperability layer for a pan-EU IoT framework (archived).'
 
 publications:
   title: Publications
-  intro: |
-    You can list your publications in this section. Lorem ipsum dolor sit
-    amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
-    bibendum fringilla a eu lectus.
   papers:
-    - title: The Art of Computer Programming
-      link: '#'
-      authors: Donald E. Knuth
-      conference: Addison-Wesley, 1968
+    - title: Peer-Review on a Decentralised Web
+      link:
+      authors: Z. Jan
+      conference: 'PhD Thesis, The Open University (KMi), 2022'
 
-    - title: 'Genetic Programming III: Darwinian Invention &amp; Problem Solving'
-      link: '#'
-      authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
-      conference: 'Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)'
+    - title: A Framework for Handling Internet of Things Data with Confidentiality and Blockchain Support
+      link:
+      authors: M. Ramachandran, N. Chowdhury, A. Third, Z. Jan, C. Valentine, et al.
+      conference: '2020'
 
-    - title: A syntax directed compiler for Algol 60
-      link: '#'
-      authors: Edgar T. Irons
-      conference: 'Comm. ACM 4 (1961), 51–55'
+    - title: 'ScienceMiles: Digital Currency for Researchers'
+      link:
+      authors: Z. Jan, A. Third, L.D. Ibanez, M. Bachler, E. Simperl, J. Domingue
+      conference: 'Companion Proceedings of The Web Conference (WWW), 2018'
 
-recommendations:
-  title: Recommendations
-  list:
-    - person: Yareli Perez
-      email: perezyareli@example.com
-      phone: 012 345 6789
-      role: General Director at example.com
-      recommendation: |
-        Alan Doe is a super employee!
-    - person: Lara Henderson
-      email: larah@example.com
-      phone: 012 345 6789
-      role: General Director at example.com
-      recommendation: |
-        I would like to work with Alan Doe again!
+    - title: Peer-Reviews on the Blockchain
+      link:
+      authors: Z. Jan, A. Third, M. Bachler, J. Domingue
+      conference: 'WWW 2018'
 
-        He is a great employee!
+    - title: Recognition and Reward System for Peer-Reviewers
+      link:
+      authors: Z. Jan
+      conference: 'CEUR Workshop Proceedings, 2018'
+
+    - title: Overcoming the Heterogeneity in the Internet of Things for Smart Cities
+      link:
+      authors: A. Kazmi, Z. Jan, A. Zappa, M. Serrano
+      conference: 'International Workshop on Interoperability and Open-Source Solutions, 2016'
 
 skills:
   title: Skills &amp; Proficiency
 
   toolset:
-    - name: Python & Django
-      level: 98%
+    - name: 'Backend: Node.js, TypeScript, Express, RESTful APIs, WebSockets, Python, Java'
+      level: 100%
 
-    - name: Javascript & jQuery
-      level: 98%
+    - name: 'Databases: PostgreSQL, Redis, MongoDB'
+      level: 100%
 
-    - name: Angular
-      level: 98%
+    - name: 'Frontend: React, Next.js, JavaScript, Vue.js'
+      level: 100%
 
-    - name: HTML5 & CSS
-      level: 95%
+    - name: 'Infrastructure: Docker, GitHub Actions, CI/CD, Git, observability tooling'
+      level: 100%
 
-    - name: Ruby on Rails
-      level: 85%
+    - name: 'Digital Assets: Ethereum/EVM, Bitcoin, Cardano, Ripple, Solidity, ERC-20/721, Hardhat, OpenZeppelin, Web3.js'
+      level: 100%
 
-    - name: Sketch & Photoshop
-      level: 60%
+    - name: 'AI Development Tools: Claude Code, GitHub Copilot'
+      level: 100%
 
 footer: >
   Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
